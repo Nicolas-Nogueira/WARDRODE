@@ -17,6 +17,7 @@ body {
 
 nav {
     position: fixed; /* always stays on screen */
+    top: 0;
     inline-size: 100%; /* full width */
     display: flex;
     justify-content: space-between;
@@ -77,7 +78,7 @@ nav ul li a.active {
 /* SIDEBAR */
 .sidebar {
     position: fixed;
-    top: 90px;
+    top: 82px;
     left: -260px; /* leave some visible area */
     width: 270px;
     height: 100%;
@@ -142,4 +143,72 @@ nav ul li a.active {
     height: 16px;
     cursor: pointer;
     accent-color: var(--color-cta);
+}
+
+/* Wardrobe Clothing Rows */
+/* .clothing-rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0%;
+} */
+
+.tops h2 {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottoms h2 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.accessories h2 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.item-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+    gap: 3rem;
+    margin-top: 1rem;
+    
+    overflow-x: scroll;
+
+    padding-block: 20px;
+
+    @media (width < 690px) {
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+}
+
+.item {
+    text-align: center;
+    padding: 20px;
+    background-color: #b5d1f9;
+    border: 5px solid #849ab7;
+    border-radius: 10%;
+
+    display: grid;
+    grid-template-rows: 0.75fr 1fr;
+}
+
+.item .item-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item h2 {
+    padding: 0;
+    margin: 0;
 }
