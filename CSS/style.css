@@ -225,4 +225,23 @@ nav ul li a.active {
     left: 10px; 
 }
 
+.arrow-btn-left-arrow, .arrow-btn-right-arrow {
+    position: absolute;
+}
 
+.arrow-btn-left-arrow {
+    left: 10px;
+}
+
+.arrow-btn-right-arrow {
+    right: 10px;
+}
+
+.arrow-btn-left-arrow:hover, .arrow-btn-right-arrow:hover {
+    background-color: var(--color-accent-1);
+}
+
+.arrow-btn-left-arrow img, .arrow-btn-right-arrow img {
+    width: 20px;
+    height: 20px;
+}
