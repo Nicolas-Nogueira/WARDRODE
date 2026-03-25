@@ -212,3 +212,22 @@ nav ul li a.active {
     padding: 0;
     margin: 0;
 }
+
+/* outfit-generator */
+
+.clothing-display{
+    position: relative;
+}
+
+.lock-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.star-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
